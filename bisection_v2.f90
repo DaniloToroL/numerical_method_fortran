@@ -50,14 +50,18 @@ contains
     function logn(a, n, c,d, x)
     implicit none
         real logn, n, a, c, d, x
-        logn = n* log(a*x + c)
+        if((a*x + c).gt.0.0) then
+            logn = n* log(a*x + c)
+        end if
         return
     end function logn
 
     function logarithmic(a,n, c, d, x)
     implicit none
         real logarithmic, n, a, c, d, x
-        logarithmic = n* log10(a*x + c)
+        if((a*x + c).gt.0.0) then
+            logarithmic = n* log10(a*x + c)
+        end if
         return
     end function logarithmic
 end module ExampleFuncs
