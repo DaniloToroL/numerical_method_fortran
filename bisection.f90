@@ -39,14 +39,19 @@ program bisection
         lower = quadratic(lower_lim)
 
         ! EVALUAMOS LAS CONDICIONES
-        ! Si la multiplicación es menor a cero, entonces la raíz está entre ese intervalo
-        ! y por lo tanto, nuestra aproximación será el nuevo límite superior
+        ! Si la multiplicación es menor a cero, entonces la raíz está 
+        ! entre ese intervalo y por lo tanto, nuestra aproximación será 
+        ! el nuevo límite superior
         if(upper*lower.lt.0.0) then
             upper_lim = mean
-        ! Si no se cumple la condición anterior, entonces la raíz está en el otro intervalo
-        ! por lo tanto, el límite menor será nuestra aproximación
-        else
+        ! Si la multiplicación es mayor a cero, entonces la raíz está en
+        ! el otro intervalo, por lo tanto, el límite menor será nuestra
+        ! aproximación
+        else if(upper*lower.gt.0.0) then
             lower_lim = mean
+        ! Si no se cumple ninguna condición, es porque encontramos la raíz
+        else
+            exit
         end if
 
         ! Si la aproximación obtenida no es cero, entonces calculamos el error relativo
