@@ -7,7 +7,7 @@ program newton_rapshon
     ! max: Número máximo de iteraciones para el método de newton rapshon
     ! l: contador de raíces
     integer i, j, k, max, l
-    ! lower, upper: intervalo donde buscará las raíces. +- 1000 al rededor de xr
+    ! lower, upper: intervalo donde buscará las raíces. +- 20 al rededor de xr
     integer lower, upper
     ! xr: aproximación
     ! fx: valor de la derivada evaluada en un punto
