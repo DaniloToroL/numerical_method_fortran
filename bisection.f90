@@ -1,6 +1,7 @@
 program bisection
 
-    !Programa de búsqueda de raíces con el método de bisección
+    ! Programa de búsqueda de raíces con el método de bisección
+    ! Autor: Danilo toro
     implicit none 
 
     ! Definimos las variables que se usarán

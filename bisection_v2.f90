@@ -1,3 +1,6 @@
+! Método de la bisección para diferentes funciones
+! Autor: Danilo toro
+
 module ExampleFuncs
 
    implicit none

@@ -1,6 +1,7 @@
 program false_position
 
     !Programa de búsqueda de raíces con el método de la falsa posición
+    ! Autor: Danilo toro
     implicit none 
 
     ! Definimos las variables que se usarán

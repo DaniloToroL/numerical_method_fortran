@@ -1,6 +1,7 @@
 program false_position_modified
 
-    !Programa de búsqueda de raíces con el método de la falsa posición modificada
+    ! Programa de búsqueda de raíces con el método de la falsa posición modificada
+    ! Autor: Danilo toro
     implicit none 
 
     ! Definimos las variables que se usarán
