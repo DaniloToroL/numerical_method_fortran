@@ -1,5 +1,5 @@
 # Numerical Method in Fortran
-Repository for codes with numeric methods in fortran, for the blog post [Método de la bisección](https://www.danilotoro.com/metodos-numericos-en-fortran)
+Repository for codes with numeric methods in fortran, for the blog post [Métodos numéricos en Fortran](https://www.danilotoro.com/metodos-numericos-en-fortran)
 
 ## Post
 - [Método de la bisección](https://www.danilotoro.com/metodo-de-la-biseccion)
